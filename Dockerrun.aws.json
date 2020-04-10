@@ -19,12 +19,14 @@
             "name": "worker",
             "image": "raunakjodhawat/multi-worker",
             "essential": false,
+            "hostname": "worker",
             "memory": 128
         },
         {
             "name": "nginx",
             "image": "raunakjodhawat/multi-nginx",
             "essential": true,
+            "hostname": "nginx",
             "portMappings": [
                 {
                     "hostPort": 80,
